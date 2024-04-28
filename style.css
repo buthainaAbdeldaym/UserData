@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.home{
+    height: 100vh;
+    background-color: #24353f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .nav{
+    position: fixed;
+    top: 0;
+    width: 90%;
+    margin: auto;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+}
+.home .nav button{
+    padding: 12px 8px;
+    border:0.2px solid green;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    transition:0.5s all;
+}
+.home .nav p{
+    color: white;
+    font-size: 22px;
+}
+.home .nav button:hover{
+    background-color: green;
+}
+.home .hello{
+    width: 60%;
+}
+.home .hello p{
+    font-size: 45px;
+    font-weight: 600;
+    color: #17a2b8;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+}
+.parent{
+    height: 100vh;
+    background-color: #24353f;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.parent .child{
+    width: 65%;
+    margin: auto;
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+    text-align: center;
+    padding: 42px 0;
+}
+.parent .child input{
+    display: block;
+    width: 80%;
+    padding: 10px 0 10px 15px;
+    border-color: white;
+    margin: 20px auto 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-width: 0.4px;
+    font-size: 18px;
+}
+.parent .child h2{
+    color: #17a2b8;
+    padding: 15px 0;
+}
+.parent .child button{
+    display: block;
+    width: 80%;
+    padding: 10px 0;
+    border-color: #17a2b8;
+    color: #17a2b8;
+    text-align: center;
+    margin: 30px auto;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: 0.5s all;
+}
+.parent .child button:hover{
+    background-color: #17a2b8;
+    color: white;
+}
+.parent .child p{
+    color: white;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+.parent .child p a{
+    color: white;
+    text-decoration: none;
+    transition: 0.4s all;
+}
+.parent .child p a:hover{
+    text-decoration:underline;
+}
+.parent .child2{
+    display: none;
+}
+.parent .child .alert{
+    color: rgb(116, 41, 41);
+    font-size: 18px;
+    border: 0.1px solid rgb(116, 41, 41);
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    border-radius: 5px;
+    display: none;
+}
+.parent .child1 .alert3{
+    color: rgb(153, 33, 33);
+    font-size: 22px;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0 0;
+    display: none;
+}
+.parent .child2 .alert4{
+    color: rgb(153, 33, 33);
+    font-size: 22px;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0 0;
+    display: none;
+}
+
+@media screen and (max-width:550px){
+    .parent .child{
+        width: 95%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .parent .child input{
+        width: 100%;
+    }
+    .parent .child button{
+        width: 100%;
+    }
+    .home .hello{
+        width: 95%;
+    }
+    .home .nav{
+        width: 100%;
+        padding: 10px 5px;
+    }
+    .parent .child p {
+        font-size: 20px;
+    }
+}
